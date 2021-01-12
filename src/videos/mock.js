@@ -1,4 +1,4 @@
-export default [
+const video = [
   {
     id: 1,
     title: "Nova I.A. Cria Qualquer Imagem Através de Texto (é assustador)",
@@ -26,6 +26,90 @@ export default [
     date: "há 5 meses",
     avatar: "/images/avatar.jpeg",
     thumb: "/images/Wendel.webp",
-  }
+  },
+  {
+    id: 4,
+    title:
+      "Mercado de TI no Canadá - Remuneração e condições de vida, valem a pena?",
+    channel: "Micael Mota",
+    views: "12 mil",
+    date: "há 5 meses",
+    avatar: "/images/avatar.jpeg",
+    thumb: "/images/Micael_canada.webp",
+  },
+  {
+    id: 5,
+    title:
+      "Mercado de TI no Canadá - Remuneração e condições de vida, valem a pena?",
+    channel: "DesignSense",
+    views: "80 mil",
+    date: "há 2 semanas",
+    avatar: "/images/avatar.jpeg",
+    thumb: "/images/UI.webp",
+  },
+  {
+    id: 6,
+    title: "NEXT.JS: O FRAMEWORK QUE VOCÊ DEVERIA CONHECER",
+    channel: "Lucas Nhimi",
+    views: "5 mil",
+    date: "há 4 meses",
+    avatar: "/images/avatar.jpeg",
+    thumb: "/images/Next.webp",
+  },
+  {
+    id: 7,
+    title: "🔴 Let's build LinkedIn with REACT.JS! (with Redux & Firebase)",
+    channel: "Sonny Sangha",
+    views: "56 mil",
+    date: "há 3 semanas",
+    avatar: "/images/avatar.jpeg",
+    thumb: "/images/Sonny.webp",
+  },
+  {
+    id: 8,
+    title: "GitHub Universe - Keynote, Dark Mode, Actions Workflow, Palestras e muito mais!",
+    channel: "Willian Justen Cursos",
+    views: "475 ",
+    date: "há 4 semanas",
+    avatar: "/images/avatar.jpeg",
+    thumb: "/images/WJ.webp",
+  },
+  {
+    id: 9,
+    title: "O que é um desenvolvedor Full Cycle?",
+    channel: "Full Cycle",
+    views: "79 mil",
+    date: "há 1 ano",
+    avatar: "/images/avatar.jpeg",
+    thumb: "/images/FullCycle.webp",
+  },
+  {
+    id: 10,
+    title: "React Projects",
+    channel: "Coding Addict",
+    views: "83 mil",
+    date: "há 2 meses",
+    avatar: "/images/avatar.jpeg",
+    thumb: "/images/React.webp",
+  },
+  {
+    id: 11,
+    title: "[BR][Front-End] React - Implementando autenticação de usuários",
+    channel: "Matheus Castiglioni",
+    views: "14 mil",
+    date: "há 1 ano",
+    avatar: "/images/avatar.jpeg",
+    thumb: "/images/auth.webp",
+  },
+  {
+    id: 12,
+    title: "Como implementar uma paginação em ReactJS",
+    channel: "Vinicius Dacal",
+    views: "191",
+    date: "há 11 horas",
+    avatar: "/images/avatar.jpeg",
+    thumb: "/images/Dacal.webp",
+  },
 ];
 
+export default video

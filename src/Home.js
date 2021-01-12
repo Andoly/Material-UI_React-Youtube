@@ -32,7 +32,7 @@ import HistoryIcon from "@material-ui/icons/History";
 import AccountCircle from "@material-ui/icons/AccountCircle";
 import AddCircle from "@material-ui/icons/AddCircle";
 
-import mock from "./videos/mock";
+import video from "./videos/mock";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -311,7 +311,7 @@ const Home = () => {
             </div>
           </Drawer>
         </Hidden>
-        <Box p={8}>
+        <Box p={5}>
           <Toolbar />
           <Typography
             variant="h5"
@@ -322,9 +322,9 @@ const Home = () => {
           </Typography>
 
           <Grid container spacing={4}>
-            {mock.map((item, index) => (
+            {video.map((item, index) => (
               <Grid item lg={3} md={4} sm={6} xs={12}>
-                <Box>
+                <Box id={index}>
                   <img
                     style={{ width: "100%" }}
                     alt={item.title}
@@ -347,7 +347,7 @@ const Home = () => {
                       {item.channel}
                     </Typography>
                     <Typography variant="body2" color="textSecondary">
-                      {`${item.views} • ${item.date}`}
+                      {`${item.views} visualizações • ${item.date}`}
                     </Typography>
                   </Box>
                 </Box>
