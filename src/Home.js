@@ -16,6 +16,7 @@ import {
   ListSubheader,
   Hidden,
   Grid,
+  Switch
 } from "@material-ui/core";
 import MenuIcon from "@material-ui/icons/Menu";
 import AccountCircleIcon from "@material-ui/icons/AccountCircle";
@@ -31,13 +32,14 @@ import VideoLibraryIcon from "@material-ui/icons/VideoLibrary";
 import HistoryIcon from "@material-ui/icons/History";
 import AccountCircle from "@material-ui/icons/AccountCircle";
 import AddCircle from "@material-ui/icons/AddCircle";
+import { useTheme } from '@material-ui/core/styles';
 
 import video from "./videos/mock";
 
 const useStyles = makeStyles((theme) => ({
   root: {
     // background: theme.palette.primary.main,
-    height: "100vh",
+    backgroundColor: theme.palette.background.dark,
   },
   AppBar: {
     boxShadow: "none",
@@ -84,8 +86,9 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-const Home = () => {
+const Home = ({ darkMode, setDarkMode }) => {
   const classes = useStyles();
+  const theme = useTheme();
 
   return (
     <div className={classes.root}>
@@ -100,24 +103,23 @@ const Home = () => {
             <MenuIcon />
           </IconButton>
           <img
-            src="/images/logo_preta.png"
+            src={theme.palette.type === 'dark' ? '/images/logo_branca.png' : '/images/logo_preta.png' }
             alt="logo"
             className={classes.logo}
           />
           <span className={classes.br}>BR</span>
           <div className={classes.grow} />
+          <Switch className={classes.icons} value={darkMode} onChange={() => setDarkMode(!darkMode)} color="default" />
           <IconButton
             edge="start"
             className={classes.icons}
-            color="inherit"
-            aria-label="menu"
+            aria-label="VideoCallIcon"
           >
             <VideoCallIcon />
           </IconButton>
           <IconButton
             edge="start"
             className={classes.icons}
-            color="inherit"
             aria-label="menu"
           >
             <AppsIcon />
@@ -125,8 +127,7 @@ const Home = () => {
           <IconButton
             edge="start"
             className={classes.icons}
-            color="inherit"
-            aria-label="menu"
+            aria-label="MoreVertIcon"
           >
             <MoreVertIcon />
           </IconButton>
